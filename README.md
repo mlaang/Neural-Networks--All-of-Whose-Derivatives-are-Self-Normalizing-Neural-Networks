@@ -6,4 +6,11 @@ This method substantially outperform methods like SIREN on the task of fitting i
 
 Below is a plot of the PSNR's achieved in a less aggressive training run and a video of the same training run:
 
-![Image from the sphere raytracer.](https://raw.githubusercontent.com/mlaang/Neural-Networks--All-of-Whose-Derivatives-are-Self-Normalizing-Neural-Networks/master/PSNR-with-less-aggressive-training.png)
+![Plot of PSNR's.](https://raw.githubusercontent.com/mlaang/Neural-Networks--All-of-Whose-Derivatives-are-Self-Normalizing-Neural-Networks/master/PSNR-with-less-aggressive-training.png)
+
+[![Video of images from fitting process.](https://img.youtube.com/vi/XYz6ayaKG_g/0.jpg)](https://www.youtube.com/watch?v=XYz6ayaKG_g)
+
+Below is a plot of the PSNR's achieved in a aggressive training run:
+
+![Plot of PSNR's.](https://raw.githubusercontent.com/mlaang/Neural-Networks--All-of-Whose-Derivatives-are-Self-Normalizing-Neural-Networks/master/PSNR-with-aggressive-training.png)
+
