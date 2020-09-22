@@ -10,8 +10,9 @@ class PositionalEncoderLayer(tf.keras.Model):
         self.scale_factor = scale_factor
         
         if in_f != 2:
-            print("in_f must be 2.")
+            raise Exception("Error in PositionalEncoderLayer: in_f must be 2, is " + str(in_f) + ".")
         if out_f % 4 != 0:
+            raise Exception("Error in PositionalEncoderLayer: out_f must be divisible by 4, is " + str(out_f) + ".")
             print("out_f must be divisible by 4.")
             
         self.useful_constant = tf.constant(tf.pow(2.0, tf.range(out_f/4, dtype=tf.float32)))
@@ -34,9 +35,9 @@ class RotatedPositionalEncoderLayer(tf.keras.Model):
         self.scale_factor = scale_factor
         
         if in_f != 2:
-            raise Exception("Error in RotatedPositionalEncoder: in_f must be 2, is " + str(in_f) + ".")
+            raise Exception("Error in RotatedPositionalEncoderLayer: in_f must be 2, is " + str(in_f) + ".")
         if out_f % 12 != 0:
-            raise Exception("Error in RotatedPositionalEncoder: out_f must be divisible by 12, is " + str(out_f) + ".")
+            raise Exception("Error in RotatedPositionalEncoderLayer: out_f must be divisible by 12, is " + str(out_f) + ".")
             
         self.useful_constant = tf.constant(tf.pow(2.0, tf.range(out_f/12, dtype=tf.float32)))
         self.rotation_matrix_1 = tf.constant(tf.reshape([[tf.cos(2.0*math.pi/3.0), tf.sin(2.0*math.pi/3.0)], [tf.sin(2.0*math.pi/3.0), tf.cos(2*math.pi/3.0)]], [2, 2]),dtype=tf.float32)
