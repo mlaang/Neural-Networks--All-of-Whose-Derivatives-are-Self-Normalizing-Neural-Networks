@@ -14,4 +14,4 @@ Below is a plot of the PSNR's achieved in a aggressive training run:
 
 ![Plot of PSNR's.](https://raw.githubusercontent.com/mlaang/Neural-Networks--All-of-Whose-Derivatives-are-Self-Normalizing-Neural-Networks/master/PSNR-with-aggressive-training.png)
 
-A write up explaining the mathematics and giving an overview can be found ![here](https://raw.githubusercontent.com/mlaang/Neural-Networks--All-of-Whose-Derivatives-are-Self-Normalizing-Neural-Networks/master/NN's%20All%20of%20Whose%20Derivatives%20are%20Self-Normalizing%20Neural%20Networks.pdf).
+A write up explaining the mathematics and giving an overview can be found ![here](https://github.com/mlaang/Neural-Networks--All-of-Whose-Derivatives-are-Self-Normalizing-Neural-Networks/blob/master/themath.pdf).
